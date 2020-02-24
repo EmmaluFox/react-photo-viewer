@@ -1,0 +1,15 @@
+﻿.photo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: -4px;
+}
+
+.photo-option {
+    width: calc(25% - 8px);
+    min-width: 140px;
+    padding: 0;
+    flex-grow: 1;
+}

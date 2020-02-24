@@ -1,0 +1,16 @@
+﻿﻿.thumbnail-image {
+    box-sizing: border-box;
+    width: 100%;
+    border: 4px solid transparent;
+    filter: grayscale(0.6);
+    transition: all 0.3s ease;
+}
+
+.thumbnail-image:hover {
+    filter: grayscale(0);
+}
+
+.thumbnail-image.selected {
+    border-color: orange;
+    filter: grayscale(0);
+}
