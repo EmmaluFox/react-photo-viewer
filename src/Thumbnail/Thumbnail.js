@@ -6,7 +6,7 @@ function Thumbnail(props) {
 
     const cssClass = "thumbnail-image" + (props.isSelected ? " selected" : "");
 
-    return <img className={cssClass} src={props.src} alt={""}/>
+    return <img data-testid = "testThumbnail" className={cssClass} src={props.src} alt={""}/>
 }
 
 Thumbnail.propTypes = {

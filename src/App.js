@@ -10,7 +10,7 @@ function App() {
     return (
         <div className="App">
             <h1>React Photo Viewer</h1>
-            <PhotoViewer src={selectedUrl}/>
+            <PhotoViewer  src={selectedUrl}/>
             <PhotoSelector selectedUrl={selectedUrl} setSelectedUrl={setSelectedUrl}/>
         </div>
     );
