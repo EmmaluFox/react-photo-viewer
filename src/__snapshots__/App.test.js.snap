@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoViewer Should not change 1`] = `
+<section>
+  <img
+    alt=""
+    className="selected-photo"
+    src="https://i.picsum.photos/id/600/1600/900.jpg"
+  />
+</section>
+`;

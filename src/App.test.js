@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 import {ImageUrls} from "./data";
+import {PhotoViewer} from "./PhotoViewer/PhotoViewer";
+import TestRenderer from 'react-test-renderer';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
@@ -18,5 +20,11 @@ test('count number of urls', () => {
   //assert
   expect(arrayLength).toBe(44);
   
-  
+});
+describe("PhotoViewer", () => {
+  it("Should not change", async () => {
+    const tree = TestRenderer.create(<PhotoViewer src={ImageUrls[0]}/>).toJSON();
+    expect(tree).toMatchSnapshot();
+  })
+
 });
